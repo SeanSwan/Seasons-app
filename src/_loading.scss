@@ -5,19 +5,19 @@ $bg-color: rgb(68, 62, 63);
 
 html {
   height: 100%;
-}
-body {
-  height: 100%;
   background: $bg-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.loadMessage {
+  color: $bar-color;
 }
 
 .loader {
   position: relative;
-  width: 75px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
+  top: 20rem;
+  left: 50rem;
 
   &__bar {
     position: absolute;

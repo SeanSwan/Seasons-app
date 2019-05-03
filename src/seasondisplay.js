@@ -32,7 +32,7 @@ const SeasonDisplay = props => {
 
   return (
     <div className={`season-display ${season}`}>
-      <h4><FontAwesomeIcon className="icons icon-left" icon={icon} /></h4>
+      <h4><FontAwesomeIcon className="icons icon-left " icon={icon} /></h4>
 
       <h1 className="displayS">{text}</h1>
       <h4><FontAwesomeIcon className="icons icon-right" icon={icon} /></h4>

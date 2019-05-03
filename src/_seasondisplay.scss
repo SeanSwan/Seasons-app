@@ -1,13 +1,21 @@
+.displayS {
+  color: $color-electric-yellow;
+  font-size: 10rem;
+  
+}
+
 .icon-left {
   position: absolute;
   top: 10px;
   left: 10px;
+  font-size: 20rem;
 }
 
 .icon-right {
   position: absolute;
   bottom: 10px;
   right: 10px;
+  font-size: 20rem;
 }
 
 .season-display.winter {
@@ -23,6 +31,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
 }
 
 .winter {
@@ -30,5 +39,5 @@
 }
 
 .summer {
-  background-color: orangered;
+  background-color: rgba(0, 255, 247, 0.673);
 }

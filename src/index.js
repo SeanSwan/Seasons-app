@@ -19,22 +19,32 @@ class App extends React.Component {
   }
 
   
-
+ 
+  renderContent () {
+    
+      if (this.state.errorMessage && !this.state.lat) {
+        return <div>Error: {this.state.errorMessage}</div>;
+      }
   
+      if (!this.state.errorMesage && this.state.lat) {
+        return <SeasonDisplay lat={this.state.lat} />;
+      }
   
+      return <Loading message='please accept location request' />;
+  
+    
+  }
   
   render() {
-    if (this.state.errorMessage && !this.state.lat) {
-      return <div>Error: {this.state.errorMessage}</div>;
-    }
+    return (
+      <div className='borderBlue'>
+        {this.renderContent()}
+      </div>
+    );
 
-    if (!this.state.errorMesage && this.state.lat) {
-      return <SeasonDisplay lat={this.state.lat} />;
-    }
-
-    return <Loading message='please accept location request' />;
-
+    
   }
+  
 }
 
 ReactDOM.render(<App />, document.querySelector("#root"));
